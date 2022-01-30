@@ -44,7 +44,7 @@ fun setupClassifier() {
     // El modelo se encuentra en la carpeta de assets
     val modelPath = "model.tflite"
 
-    // Se carga el modelo con las opciones especificadas
+    // Se carga el modelo con las opciones especificadas, this es el contexto de la aplicación
     imageClassifier = ImageClassifier.createFromFileAndOptions(this, modelPath, options)
 }
 ```
